@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         title: 'Hola Flutter',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrangeAccent),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         ),
         home: MyHomePage(),
       ),
@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// INFORMACION-DATOS DE LA APP
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
 
@@ -47,8 +48,7 @@ class MyAppState extends ChangeNotifier {
   }
 }
 
-// ...
-
+// RIEL DE NAVEGACION
 class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -109,6 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+// PAGINA DE GENERAR NOMBRES
 class GeneratorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -153,8 +154,7 @@ class GeneratorPage extends StatelessWidget {
   }
 }
 
-// ...
-
+// TARJETA de PALABRAS RANDOM
 class BigCard extends StatelessWidget {
   const BigCard({
     super.key,
@@ -187,8 +187,7 @@ class BigCard extends StatelessWidget {
   }
 }
 
-// ...
-
+// PAGINA DE FAVORITOS
 class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
